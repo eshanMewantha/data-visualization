@@ -25,5 +25,9 @@ ax.set_ylim(0.0, max(total_survivors_by_class) + 10)
 ax = total_survivors_by_sex.plot.bar(ax=axis2, color='#5F9E6E', title='Total Survivors by Sex', sharey=True)
 ax.set_ylim(0.0, max(total_survivors_by_sex) + 10)
 
+# rotate x axis labels for better visualization
+for tick in ax.get_xticklabels():
+    tick.set_rotation(0)
+
 plt.show()
 
