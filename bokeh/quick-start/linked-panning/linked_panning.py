@@ -9,7 +9,7 @@ y0 = np.sin(x)
 y1 = np.cos(x)
 y2 = np.sin(x) + np.cos(x)
 
-output_file("linked_panning.html")
+output_file("linked_panning.html", mode="inline")
 
 s1 = figure(width=250, plot_height=250, title=None)
 s1.circle(x, y0, size=10, color="navy", alpha=0.5)
