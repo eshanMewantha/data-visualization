@@ -3,7 +3,7 @@ from bokeh.plotting import figure, output_file, show
 x = [1, 2, 3, 4, 5]
 y = [6, 7, 3, 4, 5]
 
-output_file("lines.html")
+output_file("lines.html", mode="inline")
 
 p = figure(title="simple line example", x_axis_label='x', y_axis_label='y')
 
