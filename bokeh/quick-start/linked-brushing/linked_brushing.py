@@ -1,6 +1,6 @@
 import numpy as np
 from bokeh.plotting import *
-from bokeh.models import ColumnarDataSource
+from bokeh.models import ColumnDataSource
 
 N = 300
 x = np.linspace(0, 4 * np.pi, N)
