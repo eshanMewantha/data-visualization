@@ -2,10 +2,11 @@ import numpy as np
 import pandas as pd
 from bokeh.plotting import figure, output_file, show
 from bokeh.tile_providers import WMTSTileSource
+# from bokeh.models.tiles import WMTSTileSource  # if above doesnt work, use this
 
 USA = x_range, y_range = ((-13884029, -7453304), (2698291, 6455972))
 
-output_file("geographic_map.html", mode="inline")
+# output_file("geographic_map.html", mode="inline")
 
 p = figure(tools='pan, wheel_zoom, save, reset, box_zoom', x_range=x_range, y_range=y_range)
 p.axis.visible = False
