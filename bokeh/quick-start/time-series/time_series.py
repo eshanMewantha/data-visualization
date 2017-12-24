@@ -5,6 +5,7 @@ from bokeh.sampledata.stocks import AAPL
 
 aapl = np.array(AAPL['adj_close'])
 aapl_dates = np.array(AAPL['date'], dtype=np.datetime64)
+print(aapl_dates)
 
 window_size = 30
 window = np.ones(window_size) / float(window_size)
